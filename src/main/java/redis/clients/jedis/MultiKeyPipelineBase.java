@@ -349,7 +349,7 @@ abstract class MultiKeyPipelineBase extends PipelineBase implements
     }
 
     public Response<String> ping() {
-        client.ping();
+//        client.ping();
         return getResponse(BuilderFactory.STRING);
     }
 

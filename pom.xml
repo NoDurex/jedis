@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
@@ -10,39 +11,16 @@
 	<packaging>jar</packaging>
 	<groupId>redis.clients</groupId>
 	<artifactId>jedis</artifactId>
-	<version>2.2.0-SNAPSHOT</version>
+	<version>twemproxy-0.0.1-SNAPSHOT</version>
 	<name>Jedis</name>
-	<description>Jedis is a blazingly small and sane Redis java client.</description>
-  <url>https://github.com/xetorthio/jedis</url>
+	<description>This jedis is support to Twemproxy.</description>
+	<url>https://github.com/NoDurex/jedis</url>
 
-	<mailingLists>
-		<mailingList>
-			<name>Jedis Mailing List</name>
-			<post>jedis_redis@googlegroups.com</post>
-			<archive>
-                http://groups.google.com/group/jedis_redis
-            </archive>
-		</mailingList>
-	</mailingLists>
-
-	<licenses>
-		<license>
-			<name>MIT</name>
-			<url>http://github.com/xetorthio/jedis/raw/master/LICENSE.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
 
 	<issueManagement>
 		<system>github</system>
-		<url>http://github.com/xetorthio/jedis/issues</url>
+		<url>http://github.com/NoDurex/jedis/issues</url>
 	</issueManagement>
-
-         <scm>
-            <connection>scm:git:git@github.com:xetorthio/jedis.git</connection>
-            <url>scm:git:git@github.com:xetorthio/jedis.git</url>
-            <developerConnection>scm:git:git@github.com:xetorthio/jedis.git</developerConnection>
-        </scm>
 
 	<properties>
 		<redis-hosts>localhost:6379,localhost:6380</redis-hosts>
@@ -102,11 +80,11 @@
 					<aggregate>true</aggregate>
 				</configuration>
 			</plugin>
-                        <plugin>
-                                <groupId>org.apache.maven.plugins</groupId>
-                                <artifactId>maven-release-plugin</artifactId>
-                                <version>2.0-beta-9</version>
-                        </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.0-beta-9</version>
+			</plugin>
 		</plugins>
 	</build>
 </project>
